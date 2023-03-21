@@ -13,4 +13,6 @@ Acceptance Criteria:
 * Personalization: The website should provide personalized experiences, such as personalized recommendations, product suggestions, or special deals based on visitor behavior, browsing history, or preferences.
 
 # List Stories related to this theme
-1. [Stories 1](documentation/templates/theme/initiatives/epics/stories/tasks/task_template.md)
+1. [Project Manager](.github/Documentation/theme-1/initiatives/epics/stories/pm.md)
+2. [UX Designer](.github/Documentation/theme-1/initiatives/epics/stories/uxdesigner.md)
+3. [Web Analyst](.github/Documentation/theme-1/initiatives/epics/stories/webanalyst.md)
