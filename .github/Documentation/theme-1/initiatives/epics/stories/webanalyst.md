@@ -12,4 +12,6 @@ Acceptance Criteria:
 
 
 # List Stories related to this theme
-1. [Stories 1](documentation/templates/theme/initiatives/epics/stories/tasks/task_template.md)
+1. [Project Manager](.github/Documentation/theme-1/initiatives/epics/stories/pm.md)
+2. [UX Designer](.github/Documentation/theme-1/initiatives/epics/stories/uxdesigner.md)
+3. [Website Visitor](.github/Documentation/theme-1/initiatives/epics/stories/webvisitor.md)
