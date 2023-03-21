@@ -36,4 +36,7 @@ Priority: High. The initiative has the potential to significantly improve websit
 and is aligned with the organization's goals of increasing website traffic and engagement.
 
 # List stories related to this theme
-1. [Story 1](documentation/templates/theme/initiatives/epics/stories/story_template.md)
+1. [Project Manager](.github/Documentation/theme-1/initiatives/epics/stories/pm.md)
+2. [UX Designer](heme-1/initiatives/epics/stories/pm.md)
+3. [Web Analyst](.github/Documentation/theme-1/initiatives/epics/stories/webanalyst.md)
+4. [Website Visitor](.github/Documentation/theme-1/initiatives/epics/stories/webvisitor.md)
