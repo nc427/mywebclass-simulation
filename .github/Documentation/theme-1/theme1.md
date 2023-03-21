@@ -4,4 +4,4 @@ You can fill in the placeholders with your own information to create a complete 
 
 
 # List initiatives related to this theme
-1. [Initiative](documentation/templates/theme/initiatives/initiative_template.md)
+1. [Initiative](.github/Documentation/theme-1/initiatives/initiative1.md)
