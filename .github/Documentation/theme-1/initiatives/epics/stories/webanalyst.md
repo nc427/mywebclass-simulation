@@ -1,16 +1,14 @@
-"As a [user role], I want to [do something] so that [achieve a specific goal]."
-
-By following this template, you can create user stories that are structured and easy to understand. To make the user story even more effective, you can add acceptance criteria that specify the requirements that must be met to consider the user story complete. Here's an example of a user story with acceptance criteria:
-
-"As a customer, I want to view my order history so that I can track my past purchases."
+As a web analyst, I want to collect and analyze website data regularly, so that we can make data-driven decisions and improve website performance.
 
 Acceptance Criteria:
 
-The order history page displays a list of all past orders, including the date, order number, and total cost.
-Each order in the list is clickable and leads to a detailed view of the order.
-The detailed view of the order includes the list of items purchased, the quantities, the prices, and any discounts applied.
-The order history page can be accessed from the customer account dashboard.
-The order history page is only accessible to authenticated customers.
+* The web analyst will identify and set up appropriate website analytics tools to collect relevant data on website performance and user behavior.
+* The web analyst will create a data collection plan that includes the frequency of data collection and the types of data to be collected.
+* The web analyst will regularly collect website data according to the data collection plan and ensure that the data is accurate and complete.
+* The web analyst will analyze the collected data to identify patterns, trends, and insights related to website performance and user behavior.
+* The web analyst will create regular reports summarizing the data insights and recommendations for improving website performance and user experience.
+* The web analyst will share the reports with the project manager and UX designer in a timely manner, so that they can make data-driven decisions and improvements.
+* The web analyst will continually review and refine the data collection plan and data analysis methods to ensure that they are effective in achieving the goals of the initiative.
 
 
 # List Stories related to this theme
