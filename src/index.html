@@ -1,86 +1,69 @@
 <!DOCTYPE html>
-<html lang="EN">
-
+<html lang="en">
 <head>
-    <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
-
-    <title>MyWebClass.org</title>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Basic meta info -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyWebClass.org</title>
+    <meta name="description" content="A project to help educators integrate new technologies into their teaching">
     <meta name="keywords" content="My Webclass Homepage">
     <meta name="author" content="Keith Williams"/>
-    <meta name="description" content="A project to help educators integrate new technologies into their teaching">
-
     <!--OpenGraph meta -->
     <meta property="og:title" content=""/>
     <meta property="og:description" content=""/>
     <meta property="og:image" content="assets/images/logo.png"/>
     <meta property="og:url" content=""/>
-
-
-</head>
-<head>
-  <meta charset="UTF-8">
-  <title>Cookie Constent Box</title>
-  <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrapper">
-  <img src="#" alt="">
-  <div class="content">
-    <header>Cookies Consent</header>
-    <p>This website use cookies to ensure you get the best experience on our website.</p>
-    <div class="buttons">
-      <button class="item">I understand</button>
-      <a href=privacy.html class="item">Learn more</a>
-    </div>
-  </div>
-</div>
-<script>
-  const cookieBox = document.querySelector(".wrapper"),
-          acceptBtn = cookieBox.querySelector("button");
-  acceptBtn.onclick = ()=>{
-    //setting cookie for 1 month, after one month it'll be expired automatically
-    document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
-    if(document.cookie){ //if cookie is set
-      cookieBox.classList.add("hide"); //hide cookie box
-    }else{ //if cookie not set then alert an error
-      alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-    }
-  }
-  let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
-  //if cookie is set then hide the cookie box else show it
-  checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-</script>
-</body>
-</html>
-
-<body class="pt-5">
-
-<div class="container-fluid">
-    <header role="banner" class="fixed-top">
-        <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">MyWebClass.org</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Toggle navigation</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="content.html">Content Template</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="wrapper">
+        <img src="#" alt="">
+        <div class="content">
+            <header>Cookies Consent</header>
+            <p>This website use cookies to ensure you get the best experience on our website.</p>
+            <div class="buttons">
+                <button class="item">I understand</button>
+                <a href="privacy.html" class="item">Learn more</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
+    <script>
+        const cookieBox = document.querySelector(".wrapper"),
+            acceptBtn = cookieBox.querySelector("button");
+        acceptBtn.onclick = ()=>{
+            //setting cookie for 1 month, after one month it'll be expired automatically
+            document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+            if(document.cookie){ //if cookie is set
+                cookieBox.classList.add("hide"); //hide cookie box
+            }else{ //if cookie not set then alert an error
+                alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+            }
+        }
+        let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
+        //if cookie is set then hide the cookie box else show it
+        checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+    </script>
+    <div class="container-fluid">
+        <header role="banner" class="fixed-top">
+            <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">MyWebClass.org</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Toggle navigation</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="content.html">Content Template</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
     <main>
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg ">
