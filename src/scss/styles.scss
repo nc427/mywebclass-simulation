@@ -26,4 +26,75 @@ body.banner-offset {
     }
   }
 
+  /* Style for the cookie popup */
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: #f1f1f1;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: none;
+
+  // Nesting
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  a {
+    color: forestgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  // Use variables for common values
+  $button-padding: 8px 16px;
+  $button-radius: 4px;
+  $button-font-size: 14px;
+  $button-font-weight: bold;
+  $button-transition: background-color 0.3s ease;
+
+  // Mixin for common button styles
+  @mixin button-style {
+    display: inline-block;
+    margin: 0 8px;
+    padding: $button-padding;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    border-radius: $button-radius;
+    cursor: pointer;
+    transition: $button-transition;
+  }
+
+  .accept-button {
+    @include button-style;
+    background-color: grey;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      background-color: #0052a3;
+    }
+  }
+
+  .decline-button {
+    @include button-style;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+
+
+
+
  
