@@ -109,3 +109,50 @@ document.addEventListener('DOMContentLoaded', () => {
   createPrivacyModal()
   loadGoogleAnalytics()
 })
+
+// Select the cookie popup element
+const cookiePopup = document.querySelector('.cookie-popup');
+
+// Select the accept button element
+const acceptButton = cookiePopup.querySelector('.accept-button');
+
+// Select the decline button element
+const declineButton = cookiePopup.querySelector('.decline-button');
+
+// Add event listener to accept button
+acceptButton.addEventListener('click', acceptCookies);
+
+// Add event listener to decline button
+declineButton.addEventListener('click', declineCookies);
+
+// Function to accept cookies
+function acceptCookies() {
+  // Set the cookie to expire in 365 days
+  document.cookie = "cookie-consent=true; expires=" + new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+  // Hide the cookie popup
+  cookiePopup.style.display = 'none';
+}
+
+// Function to decline cookies
+function declineCookies() {
+  // Hide the cookie popup
+  cookiePopup.style.display = 'none';
+}
+
+// Check if cookie has already been set
+const cookies = document.cookie.split(';');
+for (let i = 0; i < cookies.length; i++) {
+  if (cookies[i].trim().startsWith('cookie-consent=')) {
+    // Get the value of the cookie
+    const value = cookies[i].trim().substring('cookie-consent='.length);
+    // Check if the user has declined the use of cookies
+    if (value === 'false') {
+      // Add code here to disable cookie collection
+    }
+    // Exit the loop once the cookie has been found
+    break;
+  }
+}
+
+// Show the cookie popup
+cookiePopup.style.display = 'block';
